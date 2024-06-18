@@ -63,8 +63,7 @@ https://youtu.be/gb9e3m98avk?si=IkjSeVG4HFKuZhd3
 
 
 ## Screenshots
-![Splash screen] (https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175213.png)
-
+![Splash screen](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175213.png)
 
 ## Authors
 - [@danielsherif](https://github.com/danielsherif)
