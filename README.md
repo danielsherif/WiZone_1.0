@@ -64,6 +64,14 @@ https://youtu.be/gb9e3m98avk?si=IkjSeVG4HFKuZhd3
 
 ## Screenshots
 ![Splash screen](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175213.png)
+![Registration](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175251.png)
+![Log in](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175317.png)
+![Main UI](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175418.png)
+![Imported floor plan](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175448.png)
+![Added AP in edit mode](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175512.png)
+![Wall selection mode](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175614.png)
+![Material selection](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175637.png)
+![File chooser](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/Screenshots/Screenshot%202024-06-18%20175647.png)
 
 ## Authors
 - [@danielsherif](https://github.com/danielsherif)
