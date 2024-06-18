@@ -1,0 +1,68 @@
+
+Cisco,1140i,1200
+Cisco,1240i,2500
+Cisco,3700i,4000
+Cisco,4800i,6000
+Cisco,Catalyst 9800,10000
+Cisco,Meraki AP,8500
+
+
+Ubiquiti,UniFi AP-AC Lite,1100
+Ubiquiti,UniFi AP-AC Pro,1500
+Ubiquiti,UniFi AP-AC HD,2200
+Ubiquiti,UniFi AP-AC LR,3000
+Ubiquiti,UniFi AP-AC Mesh,2800
+
+Aruba,Instant On AP11,1300
+Aruba,Instant On AP22,1800
+Aruba,Instant On AP32,2500
+Aruba,Aruba 300 Series,5000
+Aruba,Aruba 700 Series,7500
+
+TP-Link,Archer C80,1000
+TP-Link,Archer AX6000,1600
+TP-Link,Deco X60,1400
+TP-Link,Omada EAP245,2000
+TP-Link,Omada EAP660,2800
+
+
+Netgear,Orbi WiFi 6E,1800
+Netgear,Nighthawk AX8,2400
+Netgear,Orbi Satellite,1500
+Netgear,AXE11000,4000
+Netgear,AXE8,2800
+
+
+D-Link,DAP-1660,1200
+D-Link,DAP-1860,1600
+D-Link,DIR-882,1400
+D-Link,DIR-890L,1800
+D-Link,DIR-869,2000
+
+
+MikroTik,hAP ac,1000
+MikroTik,cAP ac,1400
+MikroTik,RB4011,2500
+MikroTik,RB750Gr3,3000
+MikroTik,RB951Ui-2HnD,4500
+
+
+Fortinet,FortiAP-221E,1500
+Fortinet,FortiAP-321E,2200
+Fortinet,FortiAP-101D,1800
+Fortinet,FortiAP-330D,3500
+Fortinet,FortiAP-430D,5000
+
+
+Juniper,Mist Access Point 3,2000
+Juniper,Mist Access Point 4,3000
+Juniper,Mist Access Point 5,4000
+Juniper,Mist Access Point 6,5500
+Juniper,Mist Access Point 7,7000
+
+
+Huawei,AP7010DN,1600
+Huawei,AP7030DN,2300
+Huawei,AP7060DN,3500
+Huawei,AP7130DN,5000
+Huawei,AP7230DN,6500

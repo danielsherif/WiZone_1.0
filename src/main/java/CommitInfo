@@ -1,0 +1,36 @@
+All functionalities:
+
+Last commit: Refined classes, added panning
+This commit: Fixed selection
+
+
+
+AP Cost database: Added ☑️
+Right Pane: Added ☑️
+AddAP: Added ☑️
+EditAP: Added ☑️
+DeleteAP: Added ☑️
+AddWall: Added ☑️
+DeleteWall: Added ☑️
+SelectWall: Added ☑️
+WiringMode: Added ☑️
+SnapShot: Added ☑️
+SaveFileData: Added ☑️
+Splash: Added ☑️
+ShowOriginal: Added ☑️
+Registration: Added ☑️
+CADFileLoader: Added ☑️
+Login: Added ☑️
+TopPane: Added ☑️
+CADFileLoader: Added ☑️
+Buttongroup: Added ☑️
+
+
+*Additional*
+Results: Displayed in a circle of glows depending on APs with multiple radi and glow
+Notifications: Not necessary but would be amazing
+
+Enhancements:
+
+
+Bugs:
