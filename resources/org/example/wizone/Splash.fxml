@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXProgressSpinner?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+
+<BorderPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #7a0ed9;" stylesheets="@./css/Progress.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.wizone.controller.SplashController">
+
+
+    <center>
+        <ImageView>
+            <image>
+                <Image url="@assets/Splash3.png" />
+            </image>
+        </ImageView>
+    </center>
+    <bottom>
+        <StackPane alignment="BOTTOM_RIGHT" style="-fx-padding: 10px;">
+            <MFXProgressSpinner fx:id="determinateSpinner" prefHeight="101.0" prefWidth="123.0" StackPane.alignment="CENTER">
+                <cursor>
+                    <Cursor fx:constant="WAIT" />
+                </cursor>
+                <color2>
+                    <Color red="1.0" green="1.0" blue="1.0" />
+                </color2>
+                <color3>
+                    <Color red="0.192592591047287" green="0.39444443583488464" blue="1.0" />
+                </color3>
+                <color4>
+                    <Color red="1.0" green="1.0" blue="1.0" />
+                </color4></MFXProgressSpinner>
+            <Pane cacheShape="false" centerShape="false" maxHeight="100.0" maxWidth="300.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="958.0" StackPane.alignment="BOTTOM_CENTER" />
+        </StackPane>
+    </bottom>
+</BorderPane>

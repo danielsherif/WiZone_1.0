@@ -1,0 +1,43 @@
+#button {
+    -fx-background-color: #F4F4F4;
+    -fx-text-fill: black
+}
+
+#Results {
+    -fx-background-color: #304D88;
+}
+
+#Share {
+    -fx-background-color: #f5f5f5;
+}
+
+#customToggleButton {
+    -mfx-main: #304D88;
+    -mfx-secondary: #111111;
+    -fx-text-fill: #111111;
+}
+#customToggleButton:selected {
+    -mfx-main: #304D88;
+}
+
+#customNCombo {
+    -fx-border-color: lightgrey;
+    -fx-border-radius: 5;
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+}
+
+#customNCombo:focus-within {
+    -fx-border-color: #185CC1;
+}
+
+#customNCombo .combo-popup .virtual-flow .mfx-combox-box-cell:selected {
+    -fx-background-color: #185CC1;
+}
+#customNCombo .combo-popup .virtual-flow .mfx-combox-box-cell:selected .label{
+    -fx-text-fill: #124d65;
+}
+
+#customNCombo .caret .mfx-font-icon {
+    -mfx-color: #185CC1;
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXStepper?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="768.0" maxWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #7a0ed9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.wizone.controller.RegistrationController">
+    <children>
+        <StackPane fx:id="mainPane" layoutX="330.0" layoutY="29.0" prefHeight="694.0" prefWidth="638.0">
+            <children>
+                <Pane fx:id="childPane" prefHeight="723.0" prefWidth="1041.0">
+                    <children>
+                        <MFXButton fx:id="registrationBtn" alignment="CENTER" buttonType="RAISED" layoutX="14.0" layoutY="652.0" onAction="#openRegistrationPane" prefHeight="33.0" prefWidth="165.0" rippleColor="#6016c7" style="-fx-background-color: transparent; -fx-border-color: transparent;" styleClass="registrationBtn" stylesheets="@css/components.css" text="Create new Account" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </MFXButton>
+                        <MFXButton fx:id="loginBtn" alignment="CENTER" buttonType="RAISED" layoutX="20.0" layoutY="652.0" onAction="#openLoginPane" prefHeight="33.0" prefWidth="127.0" rippleColor="#6016c7" style="-fx-background-color: transparent; -fx-border-color: transparent;" styleClass="registrationBtn" stylesheets="@css/components.css" text="Sign in instead" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </MFXButton>
+                        <StackPane fx:id="registrationPane" layoutX="20.0" layoutY="80.0" prefHeight="527.0" prefWidth="540.0" styleClass="stack-grid-bgColor" stylesheets="@css/components.css">
+                            <children>
+                                <GridPane maxHeight="-Infinity" maxWidth="-Infinity" styleClass="stack-grid-bgColor">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="40.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <padding>
+                                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                    </padding>
+                                    <children>
+                                        <StackPane prefWidth="609.0" stylesheets="@css/components.css" GridPane.rowSpan="2147483647">
+                                            <GridPane.margin>
+                                                <Insets bottom="-15.0" left="-15.0" right="-15.0" top="-15.0" />
+                                            </GridPane.margin>
+                                            <styleClass>
+                                                <String fx:value="grid-background" />
+                                                <String fx:value="stack-grid-bgColor" />
+                                            </styleClass>
+                                        </StackPane>
+                                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="538.0" styleClass="header-label" text="Registration">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <MFXStepper fx:id="RegistrationStepper" minHeight="450.0" prefHeight="450.0" prefWidth="538.0" styleClass="stepper-background" stylesheets="@css/StepperCustom.css" GridPane.rowIndex="2" />
+                                    </children>
+                                    <stylesheets>
+                                        <URL value="@css/StepperCustom.css" />
+                                        <URL value="@css/components.css" />
+                                    </stylesheets>
+                                </GridPane>
+                            </children>
+                        </StackPane>
+                        <StackPane fx:id="loginPane" layoutX="20.0" layoutY="80.0" prefHeight="527.0" prefWidth="540.0" styleClass="stack-grid-bgColor" stylesheets="@css/components.css">
+                            <children>
+                                <GridPane maxHeight="-Infinity" maxWidth="-Infinity" styleClass="stack-grid-bgColor">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="40.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <padding>
+                                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                    </padding>
+                                    <children>
+                                        <StackPane prefWidth="609.0" GridPane.rowSpan="2147483647">
+                                            <GridPane.margin>
+                                                <Insets bottom="-15.0" left="-15.0" right="-15.0" top="-15.0" />
+                                            </GridPane.margin>
+                                            <styleClass>
+                                                <String fx:value="grid-background" />
+                                                <String fx:value="stack-grid-bgColor" />
+                                            </styleClass>
+                                        </StackPane>
+                                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="538.0" styleClass="header-label" text="Login">
+                                            <font>
+                                                <Font name="Roboto Black" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <MFXStepper fx:id="LoginStepper" minHeight="450.0" prefHeight="450.0" prefWidth="538.0" GridPane.rowIndex="2" />
+                                    </children>
+                                    <stylesheets>
+                                        <URL value="@css/StepperCustom.css" />
+                                        <URL value="@css/components.css" />
+                                    </stylesheets>
+                                </GridPane>
+                            </children>
+                        </StackPane>
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXCheckbox?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXRectangleToggleNode?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXToggleButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootPane" maxHeight="1080.0" maxWidth="1920.0" minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" stylesheets="@css/Main.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.wizone.controller.MainController">
+
+   <top>
+      <HBox minHeight="70.0" minWidth="1366.0" prefHeight="70.0" prefWidth="1366.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="70.0" prefWidth="221.0">
+               <children>
+                  <ImageView fitHeight="27.0" fitWidth="140.0" layoutX="40.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/bigger2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="70.0" prefWidth="1146.0">
+               <children>
+                  <Rectangle arcHeight="10.0" arcWidth="5.0" fill="#f4f4f4" height="49.0" layoutX="931.0" layoutY="10.0" stroke="#7a0ed9" strokeType="INSIDE" width="196.0" />
+                  <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="937.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/Profile.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="welcomeLabel" layoutX="981.0" layoutY="27.0" text="Daniel Sherif" textFill="#404040">
+                     <font>
+                        <Font name="Roboto Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="9.0" fitWidth="15.0" layoutX="1099.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/chevronGrey.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="LogoutButton" layoutX="1095.0" layoutY="20.0" mnemonicParsing="false" opacity="0.03" prefHeight="25.0" prefWidth="28.0" />
+               </children></Pane>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <Pane minHeight="707.0" minWidth="231.0" prefHeight="707.0" prefWidth="231.0" BorderPane.alignment="CENTER">
+         <children>
+            <MFXComboBox id="customNCombo" fx:id="FileComboBox" floatingText="Choose Project" layoutX="15.0" layoutY="22.0" prefHeight="39.0" prefWidth="196.0" promptText="View saved projects">
+               <font>
+                  <Font name="Roboto Medium" size="12.0" />
+               </font>
+            </MFXComboBox>
+            <MFXRectangleToggleNode id="OpenFile" fx:id="OpenFile" layoutX="14.0" layoutY="69.0" maxHeight="34.0" minHeight="26.0" prefHeight="34.0" prefWidth="93.0" text="Add" textAlignment="CENTER">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font>
+            </MFXRectangleToggleNode>
+
+            <MFXRectangleToggleNode id="tog2" fx:id="saveButton" layoutX="117.0" layoutY="69.0" maxHeight="34.0" maxWidth="34.0" minHeight="34.0" minWidth="93.0" prefHeight="93.0" prefWidth="100.0" text="Save" textAlignment="CENTER">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font>
+            </MFXRectangleToggleNode>
+            <Label layoutX="24.0" layoutY="120.0" text="Tools" textFill="#404040">
+               <font>
+                  <Font name="Roboto Medium" size="15.0" />
+               </font>
+            </Label>
+            <Line endX="91.39997863769531" layoutX="117.0" layoutY="144.0" opacity="0.1" startX="-101.40003967285156" />
+            <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="29.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/1x/Asset10.png" />
+               </image></ImageView>
+            <Label layoutX="24.0" layoutY="348.0" text="Access points" textFill="#404040">
+               <font>
+                  <Font name="Roboto Medium" size="15.0" />
+               </font>
+            </Label>
+            <Line endX="91.39997863769531" layoutX="117.0" layoutY="372.0" opacity="0.1" startX="-101.40003967285156" />
+            <MFXButton id="button" fx:id="AddWalls" alignment="TOP_LEFT" depthLevel="LEVEL0" layoutX="64.0" layoutY="152.0" prefHeight="22.0" prefWidth="136.0" rippleAnimateBackground="false" style="-fx-background-color: f4f4f4;" text="Add walls" textAlignment="JUSTIFY" textFill="#464646" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </MFXButton>
+            <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="29.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/1x/Asset11.png" />
+               </image>
+            </ImageView>
+            <MFXButton id="button" fx:id="DeleteWalls" alignment="TOP_LEFT" depthLevel="LEVEL0" layoutX="64.0" layoutY="190.0" prefHeight="22.0" prefWidth="136.0" rippleAnimateBackground="false" style="-fx-background-color: f4f4f4;" text="Delete walls" textAlignment="JUSTIFY" textFill="#464646" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </MFXButton>
+            <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="29.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/1x/Asset13.png" />
+               </image>
+            </ImageView>
+            <MFXButton id="button" fx:id="selectModeButton" alignment="TOP_LEFT" depthLevel="LEVEL0" layoutX="64.0" layoutY="227.0" prefHeight="22.0" prefWidth="136.0" rippleAnimateBackground="false" style="-fx-background-color: f4f4f4;" text="Selection mode" textAlignment="JUSTIFY" textFill="#464646" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </MFXButton>
+            <ImageView fitHeight="24.0" fitWidth="13.0" layoutX="35.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/1x/Asset12.png" />
+               </image>
+            </ImageView>
+            <MFXButton id="button" fx:id="wiringModeButton" alignment="TOP_LEFT" depthLevel="LEVEL0" layoutX="64.0" layoutY="265.0" prefHeight="22.0" prefWidth="136.0" rippleAnimateBackground="false" style="-fx-background-color: f4f4f4;" text="Wiring" textAlignment="JUSTIFY" textFill="#464646" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </MFXButton>
+            <ImageView fitHeight="21.0" fitWidth="28.0" layoutX="29.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/1x/Asset15.png" />
+               </image>
+            </ImageView>
+            <MFXButton id="button" fx:id="saveSnapshot" alignment="TOP_LEFT" depthLevel="LEVEL0" layoutX="64.0" layoutY="303.0" prefHeight="22.0" prefWidth="136.0" rippleAnimateBackground="false" style="-fx-background-color: f4f4f4;" text="Save snapshot" textAlignment="JUSTIFY" textFill="#464646" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </MFXButton>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/1x/Asset14.png" />
+               </image>
+            </ImageView>
+            <MFXButton id="apButton" fx:id="APButton" alignment="TOP_LEFT" depthLevel="LEVEL0" layoutX="64.0" layoutY="381.0" prefHeight="22.0" prefWidth="136.0" rippleAnimateBackground="false" style="-fx-background-color: f4f4f4;" text="Add AP" textAlignment="JUSTIFY" textFill="#464646" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </MFXButton>
+            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="29.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/1x/Asset17.png" />
+               </image>
+            </ImageView>
+            <MFXButton id="button" fx:id="editAP" alignment="TOP_LEFT" depthLevel="LEVEL0" layoutX="64.0" layoutY="420.0" prefHeight="22.0" prefWidth="136.0" rippleAnimateBackground="false" style="-fx-background-color: f4f4f4;" text="Edit AP" textAlignment="JUSTIFY" textFill="#464646" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </MFXButton>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="30.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/1x/Asset16.png" />
+               </image>
+            </ImageView>
+            <MFXButton id="deleteAP" fx:id="deleteAP" alignment="TOP_LEFT" depthLevel="LEVEL0" layoutX="64.0" layoutY="458.0" prefHeight="22.0" prefWidth="136.0" rippleAnimateBackground="false" style="-fx-background-color: f4f4f4;" text="Delete AP" textAlignment="JUSTIFY" textFill="#464646" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </MFXButton>
+            <ImageView fitHeight="24.0" fitWidth="19.0" layoutX="33.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/1x/Asset18.png" />
+               </image>
+            </ImageView>
+            <MFXButton id="button" fx:id="coverageInfo" alignment="TOP_LEFT" depthLevel="LEVEL0" layoutX="64.0" layoutY="496.0" prefHeight="22.0" prefWidth="136.0" rippleAnimateBackground="false" style="-fx-background-color: f4f4f4;" text="Coverage info" textAlignment="JUSTIFY" textFill="#464646" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </MFXButton>
+            <MFXButton id="Results" fx:id="ResultsButton" alignment="CENTER" buttonType="RAISED" depthLevel="LEVEL1" layoutX="13.0" layoutY="603.0" prefHeight="35.0" prefWidth="197.0" rippleAnimateBackground="false" rippleColor="WHITE" rippleRadius="5.0" style="-fx-border-radius: 10; -fx-background-color: #7a0ed9;" text="Results" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto Black" size="17.0" />
+               </font>
+            </MFXButton>
+            <Label layoutX="26.0" layoutY="555.0" text="Show original" textFill="#404040">
+               <font>
+                  <Font name="Roboto" size="15.0" />
+               </font>
+            </Label>
+            <MFXToggleButton id="customToggleButton" fx:id="showOriginal" layoutX="146.0" layoutY="543.0" />
+            <MFXButton id="Share" fx:id="Share" alignment="CENTER" buttonType="RAISED" depthLevel="LEVEL0" layoutX="13.0" layoutY="648.0" maxHeight="33.0" minHeight="20.0" prefHeight="33.0" prefWidth="197.0" rippleAnimateBackground="false" rippleColor="#304d88" rippleRadius="5.0" style="-fx-border-radius: 4; -fx-border-color: #7a0ed9;" text="Share" textAlignment="CENTER" textFill="#7a0ed9" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Roboto Black" size="16.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </Pane>
+   </left>
+
+   <right>
+      <StackPane fx:id="rightPane" minHeight="707.0" minWidth="231.0" prefHeight="707.0" prefWidth="231.0" BorderPane.alignment="CENTER">
+         <children>
+
+               <!-- Wiring -->
+            <Pane fx:id="wiringSettingsPane" prefHeight="707.0" prefWidth="231.0">
+               <Label layoutX="16.0" layoutY="61.0" text="Wire type" textFill="#404040">
+                  <font>
+                     <Font name="Roboto Medium" size="15.0" />
+                  </font>
+               </Label>
+               <MFXComboBox fx:id="techTypeCB" floatingText="Select type" floatingTextGap="0.0" layoutX="14.0" layoutY="88.0" minHeight="35.0" prefHeight="30.0" prefWidth="196.0" promptText="Cat5e (Default)">
+                  <font>
+                     <Font name="Roboto Medium" size="12.0" />
+                  </font>
+               </MFXComboBox>
+               <Label layoutX="14.0" layoutY="22.0" text="Wiring settings" textFill="#404040">
+                  <font>
+                     <Font name="Roboto Medium" size="18.0" />
+                  </font>
+               </Label>
+               <Label layoutX="14.0" layoutY="136.0" text="Color" textFill="#404040">
+                  <font>
+                     <Font name="Roboto Medium" size="15.0" />
+                  </font>
+               </Label>
+               <MFXComboBox fx:id="colorCB" editable="false" floatingText="Select color" layoutX="14.0" layoutY="162.0" maxWidth="197.0" minWidth="70.0" prefHeight="39.0" prefWidth="197.0" promptText="Blue(Default)">
+                  <font>
+                     <Font name="Roboto Medium" size="12.0" />
+                  </font>
+               </MFXComboBox>
+               <Label layoutX="15.0" layoutY="218.0" text="Thickness" textFill="#404040">
+                  <font>
+                     <Font name="Roboto Medium" size="15.0" />
+                  </font>
+               </Label>
+               <MFXComboBox fx:id="thicknessCB" editable="false" floatingText="Select line thickness" layoutX="14.0" layoutY="244.0" maxWidth="197.0" minWidth="70.0" prefHeight="39.0" prefWidth="197.0" promptText="3(Default)">
+                  <font>
+                     <Font name="Roboto Medium" size="12.0" />
+                  </font>
+               </MFXComboBox>
+            </Pane>
+
+                                 <!-- Wall settings -->
+            <Pane fx:id="wallSettingsPane" prefHeight="707.0" prefWidth="231.0">
+               <Label layoutX="16.0" layoutY="61.0" text="Wall material" textFill="#404040">
+                  <font>
+                     <Font name="Roboto Medium" size="15.0" />
+                  </font>
+               </Label>
+               <MFXComboBox fx:id="wallMaterialCB" floatingText="Select material" floatingTextGap="0.0" layoutX="12.0" layoutY="86.0" minHeight="35.0" prefHeight="30.0" prefWidth="196.0" promptText="Brick (Default)">
+                  <font>
+                     <Font name="Roboto Medium" size="12.0" />
+                  </font>
+               </MFXComboBox>
+               <Label layoutX="14.0" layoutY="22.0" text="Wall settings" textFill="#404040">
+                  <font>
+                     <Font name="Roboto Medium" size="18.0" />
+                  </font>
+               </Label>
+            </Pane>
+            <Pane fx:id="apSettingsPane" prefHeight="707.0" prefWidth="231.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="22.0" text="Access point settings" textFill="#404040">
+                     <font>
+                        <Font name="Roboto Medium" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="61.0" text="Technology" textFill="#404040">
+                     <font>
+                        <Font name="Roboto Medium" size="15.0" />
+                     </font>
+                  </Label>
+                  <MFXComboBox fx:id="techCB" floatingTextGap="0.0" layoutX="14.0" layoutY="85.0" minHeight="35.0" prefHeight="30.0" prefWidth="196.0" promptText="WiFi (Default)">
+                     <font>
+                        <Font name="Roboto Medium" size="12.0" />
+                     </font>
+                  </MFXComboBox>
+                  <Label layoutX="14.0" layoutY="136.0" text="AP" textFill="#404040">
+                     <font>
+                        <Font name="Roboto Medium" size="15.0" />
+                     </font>
+                  </Label>
+                  <MFXComboBox fx:id="brandCB" editable="false" floatingText="Brand" layoutX="14.0" layoutY="162.0" maxWidth="197.0" minWidth="70.0" prefHeight="39.0" prefWidth="197.0" promptText="Cisco">
+                     <font>
+                        <Font name="Roboto Medium" size="12.0" />
+                     </font>
+                  </MFXComboBox>
+                  <MFXComboBox fx:id="modelCB" editable="false" floatingText="Model" layoutX="14.0" layoutY="212.0" maxWidth="197.0" minWidth="70.0" prefHeight="39.0" prefWidth="197.0" promptText="1140i">
+                     <font>
+                        <Font name="Roboto Medium" size="12.0" />
+                     </font>
+                  </MFXComboBox>
+                  <MFXCheckbox fx:id="editCheckBox" layoutX="16.0" layoutY="288.0" selected="true" text="Edit properties" textFill="#383838">
+                     <font>
+                        <Font name="Roboto" size="12.0" />
+                     </font>
+                  </MFXCheckbox>
+                  <MFXButton id="confirmEdit" fx:id="confirmEdit" alignment="CENTER" buttonType="RAISED" depthLevel="LEVEL1" layoutX="16.0" layoutY="610.0" prefHeight="35.0" prefWidth="197.0" rippleAnimateBackground="false" rippleColor="WHITE" rippleRadius="5.0" style="-fx-border-radius: 10; -fx-background-color: #7a0ed9;" text="Edit" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Roboto Black" size="17.0" />
+                     </font>
+                  </MFXButton>
+                  <Pane fx:id="editPropertiesPane" layoutX="12.0" layoutY="325.0" prefHeight="331.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="5.0" layoutY="14.0" text="Name" textFill="#4e4e4e">
+                           <font>
+                              <Font name="Roboto Medium" size="15.0" />
+                           </font>
+                        </Label>
+                        <MFXTextField fx:id="apName" floatMode="BORDER" floatingText="AP Name" layoutX="3.0" layoutY="38.0" maxHeight="32.0" minHeight="32.0" prefHeight="32.0" prefWidth="197.0" />
+                        <Label layoutX="8.0" layoutY="86.0" text="Transmit power" textFill="#4e4e4e">
+                           <font>
+                              <Font name="Roboto Medium" size="15.0" />
+                           </font>
+                        </Label>
+                        <MFXTextField fx:id="FirstTF" floatMode="BORDER" floatingText="2.4 GHz" layoutX="8.0" layoutY="121.0" minHeight="30.0" prefHeight="18.0" prefWidth="84.0" />
+                        <MFXTextField fx:id="SecondTF" floatMode="BORDER" floatingText="5 GHz" layoutX="109.0" layoutY="120.0" minHeight="30.0" prefHeight="18.0" prefWidth="84.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+
+            <!-- Coverage Info -->
+         </children>
+      </StackPane>
+   </right>
+   <center>
+      <Pane fx:id="centerPane" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: fff;" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+         <children>
+            <TabPane fx:id="planTabPane" layoutX="-3.0" layoutY="-2.0" prefHeight="704.0" prefWidth="912.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Plan 1">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView id="ButtonGroupp" fx:id="ButtonGroup" fitHeight="211.0" fitWidth="96.0" layoutX="852.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/ButtonGroup.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="ZoomInBG" layoutX="852.0" layoutY="219.0" mnemonicParsing="false" opacity="0.03" prefHeight="6.0" prefWidth="34.0" />
+                              <Button fx:id="ZoomOutBG" layoutX="853.0" layoutY="244.0" mnemonicParsing="false" opacity="0.03" prefHeight="6.0" prefWidth="34.0" />
+<!--                              <Button fx:id="ZoomOutBG1" layoutX="863.0" layoutY="254.0" mnemonicParsing="false" opacity="0.03" prefHeight="6.0" prefWidth="34.0" />-->
+                              <Button id="Pan" fx:id="PanBG" layoutX="855.0" layoutY="318.0" mnemonicParsing="false" opacity="0.03" prefHeight="6.0" prefWidth="34.0" />
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Plan 2">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Plan 3">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children></Pane>
+   </center>
+</BorderPane>
