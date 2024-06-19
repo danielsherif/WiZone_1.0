@@ -1,5 +1,5 @@
 
-![Logo](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/assets/bigger2.png width="400")
+![Logo](https://github.com/danielsherif/WiZone_1.0/blob/main/resources/org/example/wizone/assets/bigger2.png)
 
 
 
